@@ -582,7 +582,7 @@ int main()
                             setcolor(RED);
 
                             setbkcolor(7);
-                            outtextxy(725, 360, "Toll Data first day to last");
+                            outtextxy(725, 360, "Toll Data first day to last day");
                             outtextxy(725,380, "Vehicle name         number         tk");
 
                             outtextxy(725,400, "1.Motor bike");
