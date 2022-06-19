@@ -70,7 +70,7 @@ int main()
     int sy = (200 + 245) / 2 - textheight("A") / 2;
 
     ///Next button for data
-    int dx = (500+700)/2 - textwidth("NEXT")/2;
+    int dx = (500+700)/2 - textwidth("DATA")/2;
     int dy = (255 + 300) / 2 - textheight("A") / 2;
     int value = 0;
     //user introduction
@@ -525,7 +525,7 @@ int main()
                         bar(501, 256, 700, 300);
                         setbkcolor(6);
                         setcolor(10);
-                        outtextxy(dx, dy, "NEXT");
+                        outtextxy(dx, dy, "DATA");
                     }
                     else if(!flag11 && !(pa.x >= 500 && pa.x <= 700 && pa.y >= 255 && pa.y <= 300))
                     {
@@ -535,7 +535,7 @@ int main()
                         bar(501, 256, 700, 300);
                         setbkcolor(3);
                         setcolor(10);
-                        outtextxy(dx, dy, "NEXT");
+                        outtextxy(dx, dy, "DATA");
                     }
                     ///get click point
                     if(GetAsyncKeyState(VK_LBUTTON) & (0x8000 != 0))
@@ -567,13 +567,13 @@ int main()
                             bar(501, 256, 700, 300);
                             setbkcolor(LIGHTRED);
                             setcolor(LIGHTRED);
-                            outtextxy(dx, dy, "NEXT");
+                            outtextxy(dx, dy, "DATA");
                             delay(100);
                             setfillstyle(SOLID_FILL,6);
                             rectangle(500, 255, 700, 300);
                             bar(501, 256, 700, 300);
                             setbkcolor(6);
-                            outtextxy(dx, dy, "NEXT");
+                            outtextxy(dx, dy, "DATA");
                             ///print data
                             ifstream td("toll_data.txt");
                             string str;
@@ -735,3 +735,4 @@ int main()
     getch();
     return 0;
 }
+
